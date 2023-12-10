@@ -1,20 +1,20 @@
 local socket = require("socket")
 
 ---@class lsp*.io.provider.socket : lsp*.io.provider
-local ioSocket = {
+local io_socket = {
 	---@type socket.tcp.client
 	connection = nil,
 }
 
 ---@param port integer
-function ioSocket:open(port)
+function io_socket:open(port)
 	local connection = assert(socket.connect("127.0.0.1", port))
 	---@cast connection socket.tcp.client
 
 	self.connection = connection
 end
 
-function ioSocket:close()
+function io_socket:close()
 	if self.connection then
 		self.connection:close()
 		self.connection = nil
@@ -23,13 +23,13 @@ end
 
 ---@param bytes integer
 ---@return string data
-function ioSocket:read(bytes)
+function io_socket:read(bytes)
 	return assert(self.connection:receive(bytes))
 end
 
 ---@param data string
-function ioSocket:write(data)
+function io_socket:write(data)
 	self.connection:send(data)
 end
 
-return ioSocket
+return io_socket
