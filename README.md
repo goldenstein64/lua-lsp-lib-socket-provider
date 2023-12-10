@@ -1,6 +1,6 @@
 # lua-lsp-lib-socket-provider
 
-A socket provider for the [`lsp-lib`](https://github.com/goldenstein64/lua-lsp-lib) module wrapped over [LuaSocket](https://github.com/lunarmodules/luasocket).
+A socket transport provider for the [`lsp-lib`](https://github.com/goldenstein64/lua-lsp-lib) module wrapped over [LuaSocket](https://github.com/lunarmodules/luasocket). See the linked `lsp-lib` repository for context.
 
 ## Usage
 
