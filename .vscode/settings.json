@@ -1,0 +1,6 @@
+{
+	"Lua.workspace.library": [
+		"$USERPROFILE/AppData/Roaming/Code/User/globalStorage/sumneko.lua/addonManager/addons/luasocket/module/library"
+	],
+	"Lua.workspace.checkThirdParty": false
+}
