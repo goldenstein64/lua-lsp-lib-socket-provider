@@ -7,6 +7,10 @@ source = {
 description = {
    homepage = "https://github.com/goldenstein64/lua-lsp-lib-socket-provider",
    license = "MIT",
+   summary = "A socket provider for the lsp-lib module",
+   detailed = [[
+This provides socket transport for lsp-lib via a wrapper over LuaSocket.
+]],
 }
 dependencies = {
    "lua >= 5.1",
