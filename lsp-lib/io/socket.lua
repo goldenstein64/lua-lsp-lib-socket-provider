@@ -24,7 +24,7 @@ end
 ---@param bytes integer
 ---@return string data
 function io_socket:read(bytes)
-	return assert(self.connection:receive(bytes))
+	return (assert(self.connection:receive(bytes)))
 end
 
 ---@param data string
