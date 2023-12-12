@@ -2,6 +2,8 @@ local socket = require("socket")
 
 ---@class lsp*.io.provider.socket : lsp*.io.provider
 local io_socket = {
+	line_ending = "\n",
+
 	---@type socket.tcp.client
 	connection = nil,
 }
